@@ -1,0 +1,122 @@
+body {
+    background-image: url('images/hero-img.jpg');
+    background-size: cover;
+}
+
+.account-page-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #A8A8A8;
+}
+
+.form-wrapper {
+    background-color: #ECE480B3;
+    color: #262626;
+    text-align: center;
+    max-width: 400px;
+    margin: 2em;
+    padding: 2em;
+    border-radius: .5em;
+    text-shadow: 0 0 1px #fff;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 3em 0 2em;
+}
+
+.form-input {
+    font-family: inherit;
+    background-color: #F5F5F5;
+    font-size: .9rem;
+    padding: .75em 1em;
+    border: 1px solid #262626;
+    border-radius: .3em;
+}
+
+.form-checkbox {
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.account-btn {
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: .1em;
+    width: max-content;
+    margin-top: 2em;
+    padding: .75em 1.5em;
+    border-radius: .3em;
+    box-sizing: border-box;
+}
+
+.btn--disabled {
+    background-color: #565656;
+    color: #262626;
+    border: 1px solid #565656;
+    cursor: not-allowed;
+}
+
+.btn--enabled {
+    background-color: #638A5C;
+    color: #fff;
+    border: 1px solid #638A5C;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn--enabled:hover,
+.btn--enabled:focus,
+.btn--enabled:active {
+    box-shadow: 0 0 1px #638A5C inset, 0 0 5px #fff inset;
+}
+
+.sign-up__message {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.25em;
+    letter-spacing: .01em;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .form-input,
+    .checkbox-label {
+        font-size: 1rem;
+    }
+    
+    .account-btn {
+        font-size: 1.125rem;
+    }
+    
+    .sign-up__message > h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sign-up__message > h5 {
+        font-size: 1rem;
+    }
+}

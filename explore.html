@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>HikeFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/explore.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-wrapper--small-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <div class="nav-menu-el" id="nav-menu-el">
+                    <i class="fa-solid fa-bars nav__icon" id="nav__icon"></i>
+                </div>
+            </div>
+            <div class="container header-wrapper--large-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <nav class="nav--large-screen">
+                    <a href="index.html">Home</a>
+                    <a href="#" >Explore</a>
+                    <a href="log-in.html">Log in</a>
+                    <a href="sign-up.html">Sign up</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="container hero-wrapper">
+                    <div class="hero__text">
+                        <h1>Find your next<br> <span class="yellow">adventure</span></h1>
+                        <h4>Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.</h4>
+                    </div>
+                    <div class="hero__search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search by city</p>
+                        <span class="search-bar__btn">SEARCH</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="container trails-container">
+                <h3 class="trails__heading">Explore curated trails near you</h3>
+
+                <div class="trail-item tryon">
+                    <img src="images/tryon-creek.png" class="trail__img tryon-img" alt="A coniferous forest, strong sunlight between the trees.">
+                    <h3 class="tryon-heading">Tryon creek state area</h3>
+                    <div class="trail__rating-wrapper tryon-rating">
+                        <p>Moderate</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.5</p>
+                        <p>(428)</p>
+                    </div>
+                    <p class="tryon-info">670-acre forested area along a ravine with well-maintained trails for hikers, horses & leashed dogs.</p>
+                </div>
+                
+                <div class="trail-item marquam">
+                <img src="images/marquam.png" class="trail__img marquam-img" alt="A lake surrounded by conifers, a snow-covered mountain in the background.">
+                    <h3 class="marquam-heading">Marquam nature park</h3>
+                    <div class="trail__rating-wrapper marquam-rating">
+                        <p>Easy</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.3</p>
+                        <p>(432)</p>
+                    </div>
+                    <p class="marquam-info">193 acres of undeveloped land & over 5 miles of hiking trails with forested scenic views.</p>
+                </div>
+                
+                <div class="trail-item wildwood">
+                <img src="images/wildwood.png" class="trail__img wildwood-img" alt="A coniferous forest, strong sunlight between the trees.">
+                    <h3 class="wildwood-heading">Wildwood trail area</h3>
+                    <div class="trail__rating-wrapper wildwood-rating">
+                        <p>Easy</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.0</p>
+                        <p>(207)</p>
+                    </div>
+                    <p class="wildwood-info">The Wildwood Trail starts at the Vietnam Memorial adjacent to the Oregon Zoo and World Forestry Center and circles uphill.</p>
+                </div>
+                <img src="images/map.png" class="map hidden">
+            </section>
+            
+            <section class="links-container">
+                <div class="container links-wrapper">
+                    <div class="links-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <h5>Sign up for Notifications</h5>
+                        <p><span class="green">Sign up</span> to get conditions alerts, information on pop-up events and interesting stories.</p>
+                    </div>
+                    <div class="links-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>Get the HikeFinder App</h5>
+                        <p><span class="green">Download the app</span> to get the most out of every minute outdoors with offline maps and more!</p>
+                    </div>
+                    <div class="links-item">
+                        <i class="fa-solid fa-share"></i>
+                        <h5>Share Trails</h5>
+                        <p><span class="green">Share your hiking adventures</span> with the community and keep a record of your travels.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container footer-wrapper">
+                <div class="footer__nav">
+                    <a href="index.html" class="white">Home</a>
+                    <a href="#" class="white">Explore</a>
+                    <a href="log-in.html" class="white">Log in</a>
+                    <a href="sign-up.html" class="white">Sign up</a>
+                </div>
+                <div class="footer__title">
+                    <div class="footer__title-wrapper">
+                        <img src="images/polygon-grey.png" class="logo-img logo--grey">
+                        <img src="images/polygon-white.png" class="logo-img logo--white">
+                        <h2>HikeFinder</h2>
+                    </div>
+                    <p>Copyright 2022. HikeFinder</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

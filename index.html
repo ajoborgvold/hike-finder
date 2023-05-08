@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>HikeFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+   
+        <header>
+            <div class="header-wrapper--small-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <div class="nav-menu-el" id="nav-menu-el">
+                    <i class="fa-solid fa-bars nav__icon" id="nav__icon"></i>
+                </div>
+            </div>
+            <div class="container header-wrapper--large-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <nav class="nav--large-screen">
+                    <a href="#">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="log-in.html">Log in</a>
+                    <a href="sign-up.html">Sign up</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="container hero-wrapper">
+                    <div class="hero__text">
+                        <h1>Find your next<br> <span class="yellow">adventure</span></h1>
+                        <h4>Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.</h4>
+                    </div>
+                    <div class="hero__search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search by city</p>
+                        <span class="search-bar__btn">SEARCH</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="container hikes-container">
+                <h3 class="hikes__heading">Hikes near Bergen</h3>
+                
+                <img src="images/floyen.jpg" class="hike__img floyen-img" alt="Landscape with mountains, trees, and lakes.">
+                <div class="hike__info floyen-info">
+                    <h3>Fløyen</h3>
+                    <h5>Length: 10.2 km – Est. 5 h</h5>
+                    <p>Fløibanen is one of Norway's most visited attractions. At the top of Fløyen you will find a large and varied hiking area, spectacular views of the city.</p>
+                    <button class="hike__btn">Learn more</button>
+                </div>
+
+                <img src="images/ulriken.jpg" class="hike__img ulriken-img" alt="Bergen, Norway, viewed from a distance, mountains in the background.">
+                <div class="hike__info ulriken-info">
+                    <h3>Ulriken</h3>
+                    <h5>Length: 3.5 km - Est. 2 h 30 m</h5>
+                    <p>Ulriken is the highest of the Seven Mountains that surround the city of Bergen, Norway. It has a height of 643 meters (2,110 ft) above sea level.</p>
+                    <button class="hike__btn">Learn more</button>
+                </div>
+
+                <img src="images/landasfjellet.jpg" class="hike__img landasfjellet-img" alt="Mountains covered in moss, the city of Bergen, Norway, in the background.">
+                <div class="hike__info landasfjellet-info">
+                    <h3>Landåsfjellet</h3>
+                    <h5>Length: 3.5 km - Est. 2 h 30 m</h5>
+                    <p>Landåsfjellet is a lower plateau south of Ulriken/Haugavarden which offers numerous trails, and is almost a separate hiking region by its own.</p>
+                    <button class="hike__btn">Learn more</button>
+                </div>
+            </section>
+            
+            <section class="links-container">
+                <div class="container links-wrapper">
+                    <div class="links-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <h5>Sign up for Notifications</h5>
+                        <p><span class="green">Sign up</span> to get conditions alerts, information on pop-up events and interesting stories.</p>
+                    </div>
+                    <div class="links-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>Get the HikeFinder App</h5>
+                        <p><span class="green">Download the app</span> to get the most out of every minute outdoors with offline maps and more!</p>
+                    </div>
+                    <div class="links-item">
+                        <i class="fa-solid fa-share"></i>
+                        <h5>Share Trails</h5>
+                        <p><span class="green">Share your hiking adventures</span> with the community and keep a record of your travels.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-wrapper">
+                <div class="footer__nav">
+                    <a href="#" class="white">Home</a>
+                    <a href="explore.html" class="white">Explore</a>
+                    <a href="log-in.html" class="white">Log in</a>
+                    <a href="sign-up.html" class="white">Sign up</a>
+                </div>
+                <div class="footer__title">
+                    <div class="footer__title-wrapper">
+                        <img src="images/polygon-grey.png" class="logo-img logo--grey">
+                        <img src="images/polygon-white.png" class="logo-img logo--white">
+                        <h2>HikeFinder</h2>
+                    </div>
+                    <p>Copyright 2022. HikeFinder</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

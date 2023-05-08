@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>HikeFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/account.css">
+    </head>
+    
+    <body>
+        
+        <div class="account-page-container">
+            
+        <header>
+            <div class="header-wrapper--small-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <div class="nav-menu-el" id="nav-menu-el">
+                    <i class="fa-solid fa-bars nav__icon" id="nav__icon"></i>
+                </div>
+            </div>
+            <div class="container header-wrapper--large-screen">
+                <img src="images/polygon-black.png" class="logo-img logo--black">
+                <img src="images/polygon-green.png" class="logo-img logo--green">
+                <h2>HikeFinder</h2>
+                <nav class="nav--large-screen">
+                    <a href="index.html">Home</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="log-in.html">Log in</a>
+                    <a href="#">Sign up</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="form-wrapper" id="sign-up-wrapper">
+                <h2>Create a <br>HikeFinder account</h2>
+                <form class="account-form">
+                    <label for="sign-up__username" class="hidden"></label>
+                    <input 
+                        type="text" 
+                        name="sign-up__username" 
+                        class="form-input" 
+                        id="sign-up__username"
+                        placeholder="Enter a username"
+                        required>
+                    <label for="sign-up__email" class="hidden"></label>
+                    <input 
+                        type="email" 
+                        name="sign-up__email" 
+                        class="form-input" 
+                        id="sign-up__email"
+                        placeholder="Enter an email"
+                        required>
+                    <div>
+                        <input 
+                        type="checkbox" 
+                        name="sign-up__newsletter" 
+                        class="form-checkbox" 
+                        id="sign-up__newsletter">
+                        <label for="sign-up__newsletter" class="checkbox-label">Yes, sign me up for the newsletter</label>
+                    </div>
+                    <button 
+                        type="submit"
+                        class="account-btn btn--disabled"
+                        id="sign-up-btn"
+                        >Create account
+                        </button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container footer-wrapper">
+                <div class="footer__nav">
+                    <a href="index.html" class="white">Home</a>
+                    <a href="explore.html" class="white">Explore</a>
+                    <a href="log-in.html" class="white">Log in</a>
+                    <a href="#" class="white">Sign up</a>
+                </div>
+                <div class="footer__title">
+                    <div class="footer__title-wrapper">
+                        <img src="images/polygon-grey.png" class="logo-img logo--grey">
+                        <img src="images/polygon-white.png" class="logo-img logo--white">
+                        <h2>HikeFinder</h2>
+                    </div>
+                    <p>Copyright 2022. HikeFinder</p>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+    
+</html>

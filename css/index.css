@@ -1,0 +1,162 @@
+.hikes-container {
+    margin: 1em auto 0;
+    padding: 1em;
+}
+
+.hikes__heading {
+    color: #565656;
+}
+
+.hike__img {
+    width: 100%;
+    margin: 1em auto;
+}
+
+.hike__info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+}
+
+.hike__info > p {
+    color: #6F6F6F;
+    margin: 1em 0 0;
+}
+
+.hike__btn {
+    background-color: #638A5C;
+    color: #fff;
+    font-size: .65rem;
+    margin: 1em 0;
+    padding: .5em .75em;
+    width: max-content;
+    border: 1px solid #638A5C;
+    border-radius: .3em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hike__btn:hover,
+.hike__btn:focus,
+.hike__btn:active {
+    background-color: #ECE480;
+    color: #262626;
+    font-weight: 600;
+    border: 1px solid #262626;
+}
+
+
+@media (min-width: 500px) {
+    .hikes-container {
+        padding: 2em 3em;
+    }
+    
+    .hikes__heading {
+        font-size: 1.5rem;
+    }
+    
+    .hike__img {
+        margin-top: 2.5em;
+    }
+    
+    .hike__info {
+        margin: 0 2em;
+    }
+    
+    .hike__info > h3 {
+        font-size: 1.35rem;
+    }
+    
+    .hike__btn {
+        font-size: .75rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hikes-container {
+        display: grid;
+        grid-template-columns: 1fr 30px 1fr;
+        grid-template-areas: 
+            "heading heading heading"
+            "floyen-img floyen-img floyen-info"
+            "ulriken-info ulriken-img ulriken-img"
+            "landasfjellet-img landasfjellet-img landasfjellet-info";
+        align-items: center;
+        padding: 1em 3em;
+    }
+    
+    .hikes__heading {
+        grid-area: heading;
+        font-size: 1.65rem;
+        margin-bottom: 1em;
+    }
+    
+    .hike__img {
+        margin-top: .5em;
+    }
+    
+    .hike__info {
+        margin: 0 1em;
+    }
+    
+    .hike__info > h3 {
+        font-size: 1.45rem;
+    }
+    
+    .floyen-img { grid-area: floyen-img; }
+    .floyen-info { grid-area: floyen-info; }
+    .ulriken-img { grid-area: ulriken-img; }
+    .ulriken-info { grid-area: ulriken-info; }
+    .landasfjellet-img { grid-area: landasfjellet-img; }
+    .landasfjellet-info { grid-area: landasfjellet-info; }
+}
+
+
+@media (min-width: 1024px) {
+    .hikes-container {
+        grid-template-columns: 1fr 90px 1fr;
+    }
+    
+    .hikes__heading {
+        font-size: 1.75rem;
+    }
+    
+    .hike__info > h3 {
+        font-size: 1.55rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .hikes-container {
+        grid-template-columns: 1fr 150px 1fr;
+        gap: 1em;
+        padding: 2em 5em;
+    }
+    
+    .hikes__heading {
+        font-size: 2rem;
+    }
+    
+    .hike__info {
+        margin: 0 3em;
+    }
+    
+    .hike__info > h3 {
+        font-size: 1.75rem;
+    }
+    
+    .hike__info > h5 {
+        margin-top: 1em;
+    }
+    
+    .hike__info > p {
+        margin-top: 2em;
+    }
+    
+    .hike__btn {
+        font-size: .9rem;
+        margin-top: 2em;
+    }
+}
