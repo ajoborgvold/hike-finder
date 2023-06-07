@@ -165,7 +165,7 @@ header {
 /* Hero section*/
 
 .hero {
-    background-image: url('images/hero-img.jpg');
+    background-image: url('../images/hero-img.jpg');
     background-size: cover;
     color: #fff;
 }
